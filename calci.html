@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="styleSheet" href="calci.css">
+    </link>
+</head>
+
+<body>
+    <h1 class="head">Calculator</h1>
+    <div class="upper">
+        <div class="oneanother">
+
+            <input id="text" type="text" style="width:570px; height:160px;"></input>
+
+        </div>
+      
+        <div id="one" class="row row1">
+            <button  class="block btnclr" onclick="clearall()">C</button>
+            <button   class="block btnclr" onclick="absolute()">+/-</button>
+
+            <button   class="block btnclr" onclick="display('%')">%</button>
+            <button   class="block btnclr" onclick="display('/')">/</button>
+
+        </div>
+        <div class="row row2">
+            <button class="block btn" onclick="display('7')">7</button>
+            <button class="block btn" onclick="display('8')">8</button>
+            <button class="block btn" onclick="display('9')">9</button>
+            <button class="block  btnclr" onclick="display('*')">*</button>
+
+        </div>
+        <div class="row row3">
+            <button class="block btn" onclick="display('4')">4</button>
+            <button class="block btn" onclick="display('5')">5</button>
+            <button class="block btn" onclick="display('6')">6</button>
+            <button class="block btnclr" onclick="display('-')">-</button>
+
+        </div>
+        <div class="row row4">
+            <button class="block btn" onclick="display('1')">1</button>
+            <button class="block btn" onclick="display('2')">2</button>
+            <button class="block btn" onclick="display('3')">3</button>
+            <button class="block btnclr" onclick="display('+')">+</button>
+
+        </div>
+        <div class="row">
+            <button class="bigbtn btn" onclick="display('0')">0</button>
+            <button class="block btn" onclick="display('.')">.</button>
+            <button class="block btnclr" onclick="solve()">=</button>
+
+
+        </div>
+    
+    </div>
+    <script src="calci.js"></script>
+</body>
+
+</html>
